@@ -125,3 +125,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Snippet of Cursor Pointers for buttons (Removed in Tailwind4)  */
+
+@layer base{
+  button:not(:disabled),
+  [role="button"]:not(:disabled){
+    cursor: pointer;
+  }
+}
